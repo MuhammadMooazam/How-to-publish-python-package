@@ -1,3 +1,5 @@
+Following are some steps to publish python package on pypi.org
+
 1) Make a folder on Desktop (eg: package)
 2) Make folder within package folder with the name of your package (eg: saylani-ds)
 3) Make files of license.txt , readme.txt and setup.py within package folder
