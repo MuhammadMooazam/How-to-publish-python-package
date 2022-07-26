@@ -3,8 +3,8 @@
 ##### 1) Make a folder on Desktop (eg: package)
 ##### 2) Make folder within package folder with the name of your package (eg: saylani-ds)
 ##### 3) Make files of license.txt , readme.txt and **setup.py** within package folder
-##### 4) Make file named <b>__init__.py<b> within package folder which is saylani-ds
-##### 5) Write your whole code of library in **__init__.py** file
+##### 4) Make file named \_\_init__.py within package folder which is saylani-ds
+##### 5) Write your whole code of library in \_\_init__.py file
 ##### 6) In setup.py write the below code
 ```python
 from setuptools import setup
