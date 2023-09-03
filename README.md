@@ -1,48 +1,74 @@
-# Following are some steps to publish python package on pypi.org 
+# Publish Your Python Package on PyPI.org
 
-##### 1) Make a folder on Desktop (eg: package)
-##### 2) Make folder within package folder with the name of your package (eg: saylani-ds)
-##### 3) Make files of license.txt , readme.txt and `setup.py` within package folder
-##### 4) Make file named `__init__.py` within package folder which is saylani-ds
-##### 5) Write your whole code of library in `__init__.py` file
-##### 6) In setup.py write the below code
-```python
-from setuptools import setup
+Are you ready to share your Python package with the world? Follow these steps to publish it on PyPI.org.
 
-setup (name="saylani-ds",
-version="0.1",
-description="this is a package",
-long_description="this is a very very long description",
-author = "Sir Qasim and Syed Muhammad Mooazam",
-packages = ["saylani-ds"],
-install_packages = []
-)
-```
+# Publish Your Python Package on PyPI.org
 
-##### 7) In the package folder install the following using cmd
-```bash
-pip install wheel
-```
+Are you ready to share your Python package with the world? Follow these steps to publish it on PyPI.org.
 
-```bash
-python setup.py bdist_wheel
-```
-```bash
-python setup.py sdist bdist_wheel
-```
+1. **Create a Folder**: Make a folder on your Desktop (e.g., `package`).
 
-##### 8) After this there will be two folders automatically created in the package folder.
-##### 9) After every change in the python file must run the following command
-```bash
-python setup.py sdist bdist_wheel
-```
-##### 10) Setup an account on https://pypi.org/
-##### 11) For publishing the package on pypi run the following command
-```bash
-pip install twine
-```
-```bash
-twine upload dist/*
-```
-Then enter username and password of pypi account
-##### 12) Package has been uploaded
+2. **Package Folder**: Within the `package` folder, create a new folder with the name of your package (e.g., `saylani-ds`).
+
+3. **Create Files**: Inside the `saylani-ds` folder, create the following files:
+   - `license.txt`
+   - `readme.txt`
+   - `setup.py`
+
+4. **Init File**: Create a file named `__init__.py` within the `saylani-ds` folder. This file will contain your entire library code.
+
+5. **Setup.py Configuration**: In the `setup.py` file, write the following code.
+
+    ```python
+    from setuptools import setup
+    
+    setup (name="saylani-ds",
+    version="0.1",
+    description="this is a package",
+    long_description="this is a very very long description",
+    author = "Sir Qasim and Syed Muhammad Mooazam",
+    packages = ["saylani-ds"],
+    install_packages = []
+    )
+    ```
+
+6. **Install Dependencies**: In the package folder, open your command prompt and execute the following commands.
+    This will install the wheel package.
+        ```bash
+        pip install wheel
+        ```
+
+    This command creates binary distribution packages.
+        ```bash
+        python setup.py bdist_wheel
+        ```
+
+    This command builds the source distribution package and the binary distribution package.
+        ```bash
+        python setup.py sdist bdist_wheel
+        ```
+
+7. **Folder Creation**: After completing the previous steps, two folders will be automatically generated in the package folder.
+
+8. **Update After Changes**: After making any changes to your Python files, ensure you update your packages. Run the following command each time.
+    ```bash
+    python setup.py sdist bdist_wheel
+    ```
+
+9. **Create a PyPI Account**: If you don't already have one, go to [https://pypi.org/](https://pypi.org/) and set up your PyPI account.
+
+10. **Publish Your Package**: To publish your package on PyPI, follow these steps.
+    - Install the `twine` package.
+            ```bash
+            pip install twine
+            ```
+    - Upload your package to PyPI using `twine`.
+            ```bash
+            twine upload dist/*
+            ```
+
+     When prompted, enter your PyPI account username and password.
+
+11. **Package Successfully Uploaded**: Congratulations! Your package has been successfully uploaded to PyPI.
+
+Now, your Python library is ready to be shared with the world. Enjoy the process!
